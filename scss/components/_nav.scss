@@ -1,0 +1,35 @@
+.nav {
+    background-color: #333;
+    padding: 1rem 2rem;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        font-size: 1.6rem;
+        padding: 1.5rem .5rem;
+    }
+
+    &__item a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__logo a {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    &__button {
+
+        &--secondary {
+            border-bottom: 1px #555 solid;
+        }
+    }
+}

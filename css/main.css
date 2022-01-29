@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+.nav {
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+.nav__list {
+  list-style: none;
+}
+.nav__item {
+  font-size: 1.6rem;
+  padding: 1.5rem 0.5rem;
+}
+.nav__item a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.nav__item a:hover {
+  text-decoration: underline;
+}
+.nav__logo a {
+  font-size: 2rem;
+  color: #fff;
+}
+.nav__button--secondary {
+  border-bottom: 1px #555 solid;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.nav__item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.nav__item.active {
+  display: block;
+}
+.nav__button {
+  order: 2;
+}
+.nav__toggle {
+  cursor: pointer;
+  order: 1;
+}
+.nav__toggle .bars {
+  background: #999;
+  display: inline-block;
+  width: 29px;
+  height: 2px;
+  position: relative;
+}
+.nav__toggle .bars::before, .nav__toggle .bars::after {
+  content: "";
+  background: #999;
+  display: inline-block;
+  width: 29px;
+  height: 2px;
+  position: absolute;
+}
+.nav__toggle .bars::before {
+  top: -5px;
+}
+.nav__toggle .bars::after {
+  top: 5px;
+}
+
+@media all and (min-width: 468px) {
+  .nav {
+    padding-bottom: 0;
+  }
+  .nav__list {
+    justify-content: center;
+  }
+  .nav__logo {
+    flex: 1;
+  }
+  .nav__toggle {
+    margin-left: 1rem;
+    margin-top: -5px;
+  }
+  .nav__button {
+    width: auto;
+    order: 1;
+    display: block;
+    transition: all 0.4s;
+  }
+  .nav__button a {
+    padding: 0.7rem 1.5rem;
+    background: teal;
+    border: 1px solid #006d6d;
+    border-radius: 50rem;
+  }
+  .nav__button a:hover {
+    text-decoration: none;
+    background: #999999;
+  }
+  .nav__button--secondary {
+    border-bottom: none;
+  }
+  .nav__button--secondary a {
+    background: transparent;
+  }
+  .nav__button:not(.nav__button--secondary) a:hover {
+    color: hotpink;
+  }
+}
+@media all and (min-width: 768px) {
+  .nav__item {
+    display: block;
+    width: auto;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__logo {
+    order: 0;
+  }
+  .nav__item {
+    order: 1;
+    padding: 1.5rem 1rem;
+  }
+  .nav__button {
+    order: 2;
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

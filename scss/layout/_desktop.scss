@@ -1,0 +1,26 @@
+@media all and (min-width: 768px) {
+    .nav {
+        &__item {
+            display: block;
+            width: auto;
+        }
+
+        &__toggle {
+            display: none;
+        }
+
+        &__logo {
+            order: 0;
+        }
+
+        &__item {
+            order: 1;
+            padding: 1.5rem 1rem;
+        }
+
+        &__button {
+            order: 2;
+            padding-right: 0;
+        }
+    }
+}

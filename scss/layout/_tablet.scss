@@ -1,0 +1,48 @@
+@media all and (min-width: 468px) {
+    .nav {
+        padding-bottom: 0;
+
+        &__list {
+            justify-content: center;
+        }
+
+        &__logo {
+            flex: 1;
+        }
+
+        &__toggle {
+            margin-left: 1rem;
+            margin-top: -5px;
+        }
+
+        &__button {
+            width: auto;
+            order: 1;
+            display: block;
+            transition: all .4s;
+
+            & a {
+                padding: .7rem 1.5rem;
+                background: teal;
+                border: 1px solid #006d6d;
+                border-radius: 50rem;
+
+                &:hover {
+                    text-decoration: none;
+                    background: #999999;
+                }
+            }
+
+            &--secondary {
+                border-bottom: none;
+                & a {
+                    background: transparent;
+                }
+            }
+
+            &:not(.nav__button--secondary) a:hover {
+                color: hotpink;
+            }
+        }
+    }
+}
